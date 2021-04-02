@@ -1,5 +1,5 @@
 @import './mixins';
-@import  './utilities';
+@import './utilities';
 
 *,
 ::before,
@@ -24,12 +24,15 @@ body {
 	background-size: contain;
 	font-family: 'Poppins', sans-serif;
 	min-height: 100vh;
-	@include  responsive(x-large) {
+	@include responsive(x-large) {
 		background-image: url('../images/bg-desktop.svg');
 		background-position: left;
 		background-size: cover;
 	}
+}
 
+main {
+	margin-bottom: 1.6875rem;
 }
 
 .logo {
@@ -38,6 +41,7 @@ body {
 	width: 7.5rem;
 	@include responsive(x-large) {
 		margin-bottom: 6.5rem;
+		margin-top: 4rem;
 		width: 12.5rem;
 	}
 }
