@@ -27,7 +27,6 @@ body {
 	@include responsive(x-large) {
 		background-image: url('../images/bg-desktop.svg');
 		background-position: left;
-		background-size: cover;
 	}
 }
 
