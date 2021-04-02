@@ -1,4 +1,43 @@
-body {
-	background: #333;
+@import './mixins';
+@import  './utilities';
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
 	padding: 0;
+}
+
+:root {
+	--bg-color: #684bb1;
+}
+
+html {
+	background: var(--bg-color);
+}
+
+body {
+	background-image: url('../images/bg-mobile.svg');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: contain;
+	font-family: 'Poppins', sans-serif;
+	min-height: 100vh;
+	@include  responsive(x-large) {
+		background-image: url('../images/bg-desktop.svg');
+		background-position: left;
+		background-size: cover;
+	}
+
+}
+
+.logo {
+	margin-bottom: 4.375rem;
+	margin-top: 2.5rem;
+	width: 7.5rem;
+	@include responsive(x-large) {
+		margin-bottom: 6.5rem;
+		width: 12.5rem;
+	}
 }
