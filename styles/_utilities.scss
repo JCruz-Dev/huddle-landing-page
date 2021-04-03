@@ -3,6 +3,9 @@
 	margin-right: auto;
 	max-width: 1300px;
 	padding: 0 1rem;
+	@include responsive(x-large) {
+		padding: 0;
+	}
 }
 
 .grid-content {
@@ -46,6 +49,9 @@
 		line-height: 24px;
 		margin-bottom: 1.5rem;
 		max-width: 520px;
+		@include  responsive(x-large) {
+			font-size: 1.125rem;
+		}
 	}
 
 	button {
