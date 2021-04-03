@@ -45,12 +45,13 @@
 		color: #ffff;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 1rem;
-		font-weight: lighter;
+		font-weight: normal;
 		line-height: 24px;
 		margin-bottom: 1.5rem;
 		max-width: 520px;
 		@include  responsive(x-large) {
 			font-size: 1.125rem;
+			line-height: 27px;
 		}
 	}
 

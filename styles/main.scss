@@ -40,7 +40,7 @@ main {
 	width: 7.5rem;
 	@include responsive(x-large) {
 		margin-bottom: 4.5rem;
-		margin-top: 4rem;
+		margin-top: 4.5rem;
 		width: 12.5rem;
 	}
 }
