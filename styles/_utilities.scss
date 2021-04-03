@@ -16,6 +16,7 @@
 	@include  responsive(x-large) {
 		column-gap: 3.75rem;
 		grid-template-columns: 1fr 1fr;
+		margin-top: .5rem;
 		text-align: left;
 
 	}
@@ -94,6 +95,7 @@ footer {
 	display: grid;
 	grid-template-columns: repeat(3, max-content);
 	justify-content: center;
+	padding-right: 1rem;
 	@include  responsive(x-large) {
 		justify-content: flex-end;
 	}
